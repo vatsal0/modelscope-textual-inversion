@@ -18,13 +18,15 @@ run = wandb.init(
   anonymous='allow'
 )
 
-LEARNING_RATE = 1e-7
+LEARNING_RATE = 5e-7
 LR_WARMUP_STEPS = 100
 MAX_TRAIN_STEPS = 1000
 BATCH_SIZE = 1
 
 INITIALIZER_TOKEN = 'man'
 NUM_VECTORS = 5
+
+print(f'{LEARNING_RATE=} {NUM_VECTORS=}')
 
 device = 'cuda'
 
